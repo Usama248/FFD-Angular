@@ -3,16 +3,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-basic-login',
   templateUrl: './basic-login.component.html',
-  styleUrls: ['./basic-login.component.css']
+  styleUrls: ['./basic-login.component.scss']
 })
-export class BasicLoginComponent implements OnInit {
+export class BasicLoginComponent{
 
-  constructor() { 
-
-    console.log("login component")
+constructor() {
+    console.log("basic component loaded")
+    //// redirect to home if already logged in
+    //if (this.authenticationService.currentUserValue) {
+    //  this.router.navigate(['/']);
+    //}
   }
 
-  ngOnInit(): void {
-  }
+
 
 }
+

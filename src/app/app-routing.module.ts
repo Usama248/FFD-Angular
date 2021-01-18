@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AuthComponent} from './pages/layout/auth/auth.component';
+import {AuthComponent} from './layout/auth/auth.component';
 
 const routes: Routes = [
   {
@@ -9,14 +9,14 @@ const routes: Routes = [
     children: [
       {
         path: 'authentication',
-        loadChildren: () => import('./pages/auth.module').then(m => m.AuthModule)
+        loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
       }
     ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy', useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -16,4 +16,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BasicLoginRoutingModule { }
+export class BasicLoginRoutingModule {
+  constructor(){
+    console.log("basic login routing")
+  }
+ }
