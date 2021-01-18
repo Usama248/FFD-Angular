@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-//import { IsLoggedIn } from '../../_ helpers';
+//import { IsLoggedIn } from '../_ helpers';
 const routes: Routes = [
   {
     path: '',
@@ -26,4 +26,10 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule { 
+constructor(){
+console.log("auth module")
+
+}
+
+}
