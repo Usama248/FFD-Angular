@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-basic-login',
@@ -7,15 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicLoginComponent{
 
-constructor() {
-    console.log("basic component loaded")
-    //// redirect to home if already logged in
-    //if (this.authenticationService.currentUserValue) {
-    //  this.router.navigate(['/']);
-    //}
+  constructor(private router: Router){
   }
-
-
-
+  
+  goToPage(pageName:string){
+    this.router.navigate([`${pageName}`]);
+  }
 }
+
 

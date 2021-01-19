@@ -28,9 +28,13 @@
 
 // Circle sections
 .section-shaped {
-  background-image: url("https://media.istockphoto.com/vectors/abstract-glowing-neon-colored-soccer-ball-over-blue-background-vector-id1156102065?b=1&k=6&m=1156102065&s=612x612&w=0&h=ZdqpiuD76LXAsZGkUWb7TBy9C_UI8snnKzAxxHlCXL8=;");
+  background-image: url("../../img/brand/FFDBackground.jpg");
     //margin: 180px 0;
     position: relative;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    
 
     .stars-and-coded{
         margin-top: 8rem;
