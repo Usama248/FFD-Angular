@@ -1,22 +1,5 @@
 <footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
-  <div class="container container-lg" *ngIf="getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'">
-    <div class="row">
-      <div class="col-md-6 mb-5 mb-md-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/landing']" title="Landing Page">
-            <img src="./assets/img/theme/landing.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5 mb-lg-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/user-profile']" title="Profile Page">
-            <img src="./assets/img/theme/profile.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <div class="container">
     <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
       <div class="col-lg-6">
@@ -31,16 +14,16 @@
           <i class="fa fa-facebook-square"></i>
         </a>
         <a target="_blank" href="https://www.instagram.com/doctorrobocoach/" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
-          <i class="fa fa-dribbble"></i>
+          <i class="fa fa-instagram"></i>
         </a>
-        <a target="_blank" href="https://www.reddit.com/user/atommc" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-          <i class="fa reddit"></i>
+        <a target="_blank" href="https://www.reddit.com/user/atommc" class="btn btn-neutral btn-icon-only bg-white btn-round btn-lg" ngbTooltip="Star on Github">
+          <i class="fa fa-github"></i>
         </a>
-        <a target="_blank" href="https://www.snapchat.com/add/doctorrobocoach" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-          <i class="fa snapchat"></i>
+        <a target="_blank" href="https://www.snapchat.com/add/doctorrobocoach" class="btn btn-neutral bg-warning btn-icon-only btn-round btn-lg" ngbTooltip="Star on Github">
+          <i class="fa fa-snapchat"></i>
         </a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC1o3jLJ3ifF3Wqlse17HKRw" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-          <i class="fa youtube"></i>
+        <a target="_blank" href="https://www.youtube.com/channel/UC1o3jLJ3ifF3Wqlse17HKRw" class="btn btn-neutral bg-danger btn-icon-only btn-round btn-lg" ngbTooltip="Star on Github">
+          <i class="fa fa-youtube-play"></i>
         </a>
       </div>
     </div>
@@ -49,23 +32,18 @@
       <div class="col-md-6">
         <div class="copyright">
           &copy; {{test | date: 'yyyy'}}
-          <a href="https://www.creative-tim.com?ref=adsa-footer" target="_blank">Creative Tim</a>.
+          <a href="https://www.creative-tim.com?ref=adsa-footer" target="_blank">Tom</a>.
         </div>
       </div>
       <div class="col-md-6">
         <ul class="nav nav-footer justify-content-end">
           <li class="nav-item">
-            <a href="https://www.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Creative Tim</a>
+            <a href="https://www.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Login</a>
           </li>
           <li class="nav-item">
-            <a href="https://www.creative-tim.com/presentation?ref=adsa-footer" class="nav-link" target="_blank">About Us</a>
+            <a href="https://www.creative-tim.com/presentation?ref=adsa-footer" class="nav-link" target="_blank">Register</a>
           </li>
-          <li class="nav-item">
-            <a href="http://blog.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/creativetimofficial/argon-design-system-angular/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-          </li>
+    
         </ul>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import { BasicLoginComponent } from './login/basic-login/basic-login.component';
+import { BasicRegComponent } from './registration/basic-reg/basic-reg.component';
 const routes: Routes = [
   {
     path: '',
@@ -10,11 +12,11 @@ const routes: Routes = [
     children: [
       {
         path: 'login',
-        loadChildren: () => import('./login/basic-login/basic-login.module').then(m => m.BasicLoginModule)
+        component: BasicLoginComponent
       },
       {
         path: 'registration',
-        loadChildren: () => import('./registration/basic-reg/basic-reg.module').then(m => m.BasicRegModule)
+        component: BasicRegComponent
       }
     ]
   }
@@ -25,7 +27,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AuthRoutingModule {
-  constructor(){
-    console.log("auth module")
-  }
  }
