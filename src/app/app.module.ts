@@ -7,6 +7,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/Home/home.component';
 import { RoboCoachComponent } from './pages/robo-coach/robo-coach.component';
+import { FreeStuffComponent } from './pages/free-stuff/free-stuff.component';
+import { HelpComponent } from './pages/help/help.component';
+import { FAQComponent } from './pages/faq/faq.component';
+import { RoboCheatComponent } from './pages/robo-cheat/robo-cheat.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { RoboCoachComponent } from './pages/robo-coach/robo-coach.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    RoboCoachComponent
+    RoboCoachComponent,
+    FreeStuffComponent,
+    HelpComponent,
+    FAQComponent,
+    RoboCheatComponent
   ],
   imports: [
     BrowserModule,
