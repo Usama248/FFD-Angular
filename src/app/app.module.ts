@@ -12,6 +12,9 @@ import { HelpComponent } from './pages/help/help.component';
 import { FAQComponent } from './pages/faq/faq.component';
 import { RoboCheatComponent } from './pages/robo-cheat/robo-cheat.component';
 import { StrengthOfScheduleComponent } from './pages/strength-of-schedule/strength-of-schedule.component';
+import { RoboDraftComponent } from './pages/robo-draft/robo-draft.component';
+import { RoboAuctionComponent } from './pages/robo-auction/robo-auction.component';
+import { ArticlesComponent } from './pages/articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { StrengthOfScheduleComponent } from './pages/strength-of-schedule/streng
     HelpComponent,
     FAQComponent,
     RoboCheatComponent,
-    StrengthOfScheduleComponent
+    StrengthOfScheduleComponent,
+    RoboDraftComponent,
+    RoboAuctionComponent,
+    ArticlesComponent,
   ],
   imports: [
     BrowserModule,
