@@ -11,6 +11,7 @@ import { FreeStuffComponent } from './pages/free-stuff/free-stuff.component';
 import { HelpComponent } from './pages/help/help.component';
 import { FAQComponent } from './pages/faq/faq.component';
 import { RoboCheatComponent } from './pages/robo-cheat/robo-cheat.component';
+import { StrengthOfScheduleComponent } from './pages/strength-of-schedule/strength-of-schedule.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RoboCheatComponent } from './pages/robo-cheat/robo-cheat.component';
     FreeStuffComponent,
     HelpComponent,
     FAQComponent,
-    RoboCheatComponent
+    RoboCheatComponent,
+    StrengthOfScheduleComponent
   ],
   imports: [
     BrowserModule,

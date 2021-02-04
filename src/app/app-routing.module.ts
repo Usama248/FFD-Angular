@@ -7,6 +7,7 @@ import {HelpComponent } from './pages/help/help.component';
 import {AuthComponent} from './pages/auth/auth.component';
 import {FAQComponent} from './pages/faq/faq.component';
 import {RoboCheatComponent} from './pages/robo-cheat/robo-cheat.component';
+import { StrengthOfScheduleComponent } from './pages/strength-of-schedule/strength-of-schedule.component';
 const routes: Routes = [
   {
     path: '',
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'RoboCheat',
    component: RoboCheatComponent,
+  },
+  {
+    path: 'strengthofschedule',
+   component: StrengthOfScheduleComponent,
   },
   {
     path: '',
